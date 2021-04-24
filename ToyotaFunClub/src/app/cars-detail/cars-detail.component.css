@@ -1,0 +1,19 @@
+.carsClass {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.carsImage {
+    width: 600px;
+    height: 268px;
+}
+.carsDivider {
+    background-color: #63ADD0;
+    width: 100%;
+    height: 2px;
+    border: none;
+}
+.carName {
+    font-size: large;
+}

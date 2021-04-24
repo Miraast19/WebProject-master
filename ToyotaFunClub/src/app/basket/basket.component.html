@@ -1,0 +1,16 @@
+<h2>Basket</h2>
+<div *ngFor = "let cars of carsFromBasket" class = "carsClass">
+    <p>{{cars.name}}</p>
+    <h3>
+        <img [src]="cars.imageLink" class = "carsImage">
+        <p *ngIf = "cars.description">
+            Description: {{cars.description}}
+        </p>
+        <p>
+            Price: {{cars.price}}
+        </p>
+        <button (click)= "deleteCarsFromBasket(cars)" >Delete from basket</button>
+        <button (click)= "buyCarsFromBasket(cars)"> Buy </button>
+    </h3>
+    <hr class = "carsDivider">
+<div>

@@ -1,0 +1,16 @@
+<div *ngFor = "let cars of carsList" class = "carsClass">
+
+    <div *ngIf = "selectedCarsId == cars.id">
+        <h2 class = "carName">{{cars.name}}</h2>
+        <h3>
+            <img [src]="cars.imageLink" class = "carsImage">
+            <p *ngIf = "cars.description">
+                Description: {{cars.description}}
+            </p>
+            <p>
+                Price: {{cars.price}}
+            </p>
+            <button (click)= "onAddToBasket(cars)">Add to Basket</button>
+        </h3>
+    </div>
+</div>

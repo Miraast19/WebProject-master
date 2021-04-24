@@ -1,0 +1,17 @@
+ul{
+    list-style: none; 
+}
+li a{  
+
+    color: black; 
+    font-weight: 300; 
+    letter-spacing: 2px; 
+    text-decoration: none; 
+    padding-top: 10px;
+    display: inline-block; 
+    width: 100%; 
+    text-align: left; 
+}
+p{
+    color: white;
+}
